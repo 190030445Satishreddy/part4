@@ -1,0 +1,45 @@
+{
+  "name": "bloglist",
+  "version": "1.0.0",
+  "description": "Backend for an app where users can store info about interesting blogs in the Internet.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "cross-env NODE_ENV=test jest --verbose --runInBand",
+    "start": "NODE_ENV=production node index.js",
+    "dev": "cross-env NODE_ENV=development nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jtimonen/full-stack-open/tree/master/part4"
+  },
+  "keywords": [
+    "blog",
+    "fullstack"
+  ],
+  "author": "Juho Timonen",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.19",
+    "mongoose": "^5.9.26",
+    "mongoose-unique-validator": "^2.0.3",
+    "morgan": "^1.10.0",
+    "set-value": "^3.0.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "eslint": "^7.5.0",
+    "jest": "^26.1.0",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
